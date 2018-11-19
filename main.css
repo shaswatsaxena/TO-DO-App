@@ -1,0 +1,59 @@
+body {
+    min-height: 100vh;
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.mainContainer {
+    width : 50%;
+    margin: 0 auto;
+}
+
+.mainContainer .panel {
+    border: 1px solid #00d1b2;
+    border-top: none;
+    border-radius: 10px;
+}
+
+.mainContainer .panel-block {
+    border: none;
+    border-radius: 10px;
+    transition: all 500ms ease-out 10ms;
+}
+
+.mainContainer .delete {
+    background-color: #ff3860;
+}
+
+.mainContainer .delete:hover {
+    background-color: #ff3860;
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgba(54,54,54,0.3);
+}
+
+.done:hover {
+    text-decoration: line-through;
+    color: rgba(54,54,54,0.3);
+}
+
+.messageBox div{
+    width: 13%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 20px;
+    right: 45%;
+}
+
+@media only screen and (max-width:780px)  {
+    .mainContainer {
+        width : 100%;
+    }
+    .messageBox div{
+        width: 50%;
+    }
+}

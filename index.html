@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>   To Do List  </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <section class="section mainContainer">
+            <div class="box is-shadowless is-paddingless">
+                <nav id="todoContainer" class="panel">
+                    <div class="panel-heading  has-background-primary  is-clearfix is-marginless">
+                        <h1 class="title has-text-weight-bold has-text-white is-pulled-left " >To-Do List</h1>
+                        <button id="addTodoButton" class="button is-pulled-right is-primary is-inverted is-outlined">X</button>
+                    </div>
+                    <div id="inputTodoBox" class="panel-block">
+                        <p class="control">
+                            <input id="inputTodoField" class="input is-medium is-primary" type="text" placeholder="Add New Todo">
+                        </p>
+                    </div>
+                    <a class="panel-block is-size-3">
+                        <i class="delete is-medium  is-hidden"></i>
+                        This is a Sample Todo.
+                    </a>
+                    <a class="panel-block is-size-3">
+                        <i class="delete is-medium  is-hidden"></i>
+                        This is another Sample Todo.
+                    </a>
+                    <a class="panel-block is-size-3 done">
+                        <i class="delete is-medium  is-hidden"></i>
+                        This is a Completed Todo.
+                    </a>
+                </nav>
+            </div>
+        </section>
+        <section class="section messageBox">
+            <div id="removed" class="notification is-danger is-hidden">
+                <button class="delete"></button>
+                To-Do Removed
+            </div>
+            <div id="added" class="notification is-primary  is-hidden">
+                <button class="delete"></button>
+                To-Do Added
+            </div>
+            <div id="completed" class="notification is-info is-hidden">
+                <button class="delete"></button>
+                To-Do Marked Complete
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
