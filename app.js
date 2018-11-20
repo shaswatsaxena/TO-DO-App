@@ -39,11 +39,13 @@ var todo = {
         $(this).children().addClass("is-hidden");
     },
     markDone : function () {
+        if (!($(this).hasClass("done"))) {
+            $("#completed").removeClass("is-hidden");
+            setTimeout(function(){
+                $("#completed").addClass("is-hidden");
+            }, 1000);
+        }
         $(this).toggleClass("done");
-        $("#completed").removeClass("is-hidden");
-        setTimeout(function(){
-            $("#completed").addClass("is-hidden");
-        }, 1000);
     },
     deleteTodo : function (event) {
         $(this).parent().fadeOut(250, function () {
